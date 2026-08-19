@@ -9,7 +9,7 @@ const CourseDetails: React.FC = () => {
   const course = {
     id,
     title: "Python Programming",
-    instructor: "Prof. Rahul Sharma",
+    instructor: "Mrs. Kalpa R",
     category: "Programming",
     duration: "10 Weeks",
     level: "Beginner",

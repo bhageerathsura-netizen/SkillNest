@@ -14,7 +14,7 @@ export interface Faculty {
 export const faculty: Faculty[] = [
   {
     id: 1,
-    name: "Dr. Ananya Rao",
+    name: "Ms. Kusuma P",
     role: "Professor",
     department: "Computer Science",
     experience: "10+ Years",
@@ -30,7 +30,7 @@ export const faculty: Faculty[] = [
 
   {
     id: 2,
-    name: "Prof. Rahul Sharma",
+    name: "Mrs. Kalpa R",
     role: "Senior Instructor",
     department: "Programming",
     experience: "8+ Years",
@@ -46,7 +46,7 @@ export const faculty: Faculty[] = [
 
   {
     id: 3,
-    name: "Dr. Priya Nair",
+    name: "Mrs. Kavyashree S",
     role: "AI Researcher",
     department: "Artificial Intelligence",
     experience: "12+ Years",
@@ -62,7 +62,7 @@ export const faculty: Faculty[] = [
 
   {
     id: 4,
-    name: "Prof. Arjun Mehta",
+    name: "Mrs. Rose Priyanka",
     role: "UX Instructor",
     department: "Design",
     experience: "7+ Years",
@@ -78,7 +78,7 @@ export const faculty: Faculty[] = [
 
   {
     id: 5,
-    name: "Dr. Sneha Kapoor",
+    name: "Mrs. Kalyani S Kumar",
     role: "Data Scientist",
     department: "Data Science",
     experience: "9+ Years",
@@ -94,7 +94,7 @@ export const faculty: Faculty[] = [
 
   {
     id: 6,
-    name: "Prof. Vikram Singh",
+    name: "Dr. Chayadevi M L",
     role: "Cloud Architect",
     department: "Cloud Computing",
     experience: "11+ Years",

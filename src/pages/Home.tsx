@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 import CourseCard from "../components/CourseCard";
 import FacultyCard from "../components/FacultyCard";
 
-
 const Home: React.FC = () => {
   const courses = [
     {
@@ -12,7 +11,7 @@ const Home: React.FC = () => {
       title: "Full Stack Web Development",
       description:
         "Master modern web development with HTML, CSS, JavaScript, React and backend technologies.",
-      instructor: "Dr. Ananya Rao",
+      instructor: "Ms. Kusuma P",
       category: "Web Development",
       duration: "8 Weeks",
       level: "Beginner",
@@ -24,7 +23,7 @@ const Home: React.FC = () => {
       title: "Python Programming",
       description:
         "Learn Python from the basics and build real-world applications through hands-on projects.",
-      instructor: "Prof. Rahul Sharma",
+      instructor: "Mrs. Kalpa R",
       category: "Programming",
       duration: "10 Weeks",
       level: "Beginner",
@@ -36,7 +35,7 @@ const Home: React.FC = () => {
       title: "Artificial Intelligence & ML",
       description:
         "Explore machine learning concepts, algorithms and practical AI applications.",
-      instructor: "Dr. Priya Nair",
+      instructor: "Mrs. Kavyashree S",
       category: "AI & ML",
       duration: "12 Weeks",
       level: "Intermediate",
@@ -47,21 +46,21 @@ const Home: React.FC = () => {
 
   const faculty = [
     {
-      name: "Dr. Ananya Rao",
+      name: "Ms. Kusuma P",
       role: "Professor",
       department: "Computer Science",
       experience: "10+ Years",
       rating: 4.9,
     },
     {
-      name: "Prof. Rahul Sharma",
+      name: "Mrs. Kalpa R",
       role: "Senior Instructor",
       department: "Programming",
       experience: "8+ Years",
       rating: 4.8,
     },
     {
-      name: "Dr. Priya Nair",
+      name: "Mrs. Kavyashree S",
       role: "AI Researcher",
       department: "Artificial Intelligence",
       experience: "12+ Years",
@@ -95,9 +94,10 @@ const Home: React.FC = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
+              {/* FIXED: White text on blue button */}
               <Link
                 to="/courses"
-                className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700"
+                className="rounded-lg bg-blue-600 px-6 py-3 font-semibold !text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700 hover:!text-white"
               >
                 Explore Courses →
               </Link>
@@ -164,6 +164,7 @@ const Home: React.FC = () => {
                     <p className="text-sm text-gray-500">
                       Continue Learning
                     </p>
+
                     <p className="font-bold text-gray-900">
                       Python Programming
                     </p>
@@ -184,7 +185,9 @@ const Home: React.FC = () => {
       {/* Features */}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="text-center">
-          <p className="font-semibold text-blue-600">WHY SkillNest?</p>
+          <p className="font-semibold text-blue-600">
+            WHY SkillNest?
+          </p>
 
           <h2 className="mt-2 text-3xl font-bold text-gray-900">
             Everything you need to learn better
@@ -198,10 +201,26 @@ const Home: React.FC = () => {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
-            ["🎥", "Video Lectures", "Learn from structured video lessons."],
-            ["👨‍🏫", "Expert Faculty", "Learn directly from experienced instructors."],
-            ["📝", "Assignments", "Practice what you learn."],
-            ["📊", "Track Progress", "Monitor your learning journey."],
+            [
+              "🎥",
+              "Video Lectures",
+              "Learn from structured video lessons.",
+            ],
+            [
+              "👨‍🏫",
+              "Expert Faculty",
+              "Learn directly from experienced instructors.",
+            ],
+            [
+              "📝",
+              "Assignments",
+              "Practice what you learn.",
+            ],
+            [
+              "📊",
+              "Track Progress",
+              "Monitor your learning journey.",
+            ],
           ].map(([icon, title, text]) => (
             <div
               key={title}
@@ -211,7 +230,9 @@ const Home: React.FC = () => {
                 {icon}
               </div>
 
-              <h3 className="mt-5 font-bold text-gray-900">{title}</h3>
+              <h3 className="mt-5 font-bold text-gray-900">
+                {title}
+              </h3>
 
               <p className="mt-2 text-sm leading-6 text-gray-500">
                 {text}
@@ -254,7 +275,9 @@ const Home: React.FC = () => {
       {/* Faculty */}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="text-center">
-          <p className="font-semibold text-blue-600">OUR FACULTY</p>
+          <p className="font-semibold text-blue-600">
+            OUR FACULTY
+          </p>
 
           <h2 className="mt-2 text-3xl font-bold text-gray-900">
             Learn from the best
@@ -279,12 +302,12 @@ const Home: React.FC = () => {
             Join SkillNest and take the next step in your learning journey.
           </p>
 
-            <Link
-                to="/courses"
-                className="rounded-xl border border-blue-200 bg-white px-6 py-3 font-semibold text-blue-600 shadow-sm transition-all hover:bg-blue-50 hover:border-blue-300"
-                >
-                Explore Courses →
-            </Link>
+          <Link
+            to="/courses"
+            className="rounded-xl border border-blue-200 bg-white px-6 py-3 font-semibold text-blue-600 shadow-sm transition-all hover:border-blue-300 hover:bg-blue-50"
+          >
+            Explore Courses →
+          </Link>
         </div>
       </section>
     </div>
