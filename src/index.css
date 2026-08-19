@@ -1,12 +1,10 @@
 @import "tailwindcss";
 
 /* =========================================================
-   GLOBAL DESIGN SYSTEM
-   SkillNest - Blue + White
+   SKILLNEST GLOBAL DESIGN SYSTEM
    ========================================================= */
 
 :root {
-  /* Colors */
   --primary: #2563eb;
   --primary-dark: #1d4ed8;
   --primary-light: #eff6ff;
@@ -20,7 +18,6 @@
 
   --border: #e2e8f0;
 
-  /* Typography */
   --sans:
     Inter,
     ui-sans-serif,
@@ -68,20 +65,12 @@ body {
   font-family: var(--sans);
 }
 
-/* =========================================================
-   ROOT APPLICATION
-   ========================================================= */
-
 #root {
   width: 100%;
   min-height: 100vh;
+  max-width: none;
   margin: 0;
   padding: 0;
-
-  /* IMPORTANT:
-     Do NOT give #root a fixed width.
-     This allows the application to use the entire desktop. */
-  max-width: none;
 
   text-align: left;
 
@@ -93,6 +82,18 @@ body {
    TYPOGRAPHY
    ========================================================= */
 
+/*
+  IMPORTANT:
+  We intentionally DON'T set a global color for h1/h2/h3.
+
+  Tailwind classes such as:
+  text-white
+  text-slate-900
+  text-blue-600
+
+  should control the color on individual pages.
+*/
+
 h1,
 h2,
 h3,
@@ -100,13 +101,16 @@ h4,
 h5,
 h6 {
   margin: 0;
-  color: var(--text-dark);
   font-family: var(--sans);
 }
 
 p {
   margin: 0;
 }
+
+/* =========================================================
+   FORM ELEMENTS
+   ========================================================= */
 
 button,
 input,

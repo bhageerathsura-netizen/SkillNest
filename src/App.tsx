@@ -8,6 +8,7 @@ import CourseDetails from "./pages/CourseDetails";
 import Faculty from "./pages/Faculty";
 import About from "./pages/About";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 // Student pages
 import Dashboard from "./pages/Dashboard";
@@ -20,7 +21,10 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* ==================== PUBLIC ROUTES ==================== */}
+
+        {/* =====================================================
+            PUBLIC ROUTES
+        ====================================================== */}
 
         <Route path="/" element={<Home />} />
 
@@ -31,13 +35,32 @@ const App: React.FC = () => {
           element={<CourseDetails />}
         />
 
-        <Route path="/faculty" element={<Faculty />} />
+        <Route
+          path="/faculty"
+          element={<Faculty />}
+        />
 
-        <Route path="/about" element={<About />} />
+        <Route
+          path="/about"
+          element={<About />}
+        />
 
-        <Route path="/login" element={<Login />} />
+        {/* Login */}
+        <Route
+          path="/login"
+          element={<Login />}
+        />
 
-        {/* ==================== STUDENT ROUTES ==================== */}
+        {/* Registration */}
+        <Route
+          path="/register"
+          element={<Register />}
+        />
+
+
+        {/* =====================================================
+            STUDENT ROUTES
+        ====================================================== */}
 
         <Route
           path="/dashboard"
@@ -64,12 +87,16 @@ const App: React.FC = () => {
           element={<Profile />}
         />
 
-        {/* ==================== FALLBACK ==================== */}
+
+        {/* =====================================================
+            FALLBACK
+        ====================================================== */}
 
         <Route
           path="*"
           element={<Home />}
         />
+
       </Routes>
     </BrowserRouter>
   );

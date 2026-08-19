@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import CourseCard from "../components/CourseCard";
 import FacultyCard from "../components/FacultyCard";
 
+
 const Home: React.FC = () => {
   const courses = [
     {
