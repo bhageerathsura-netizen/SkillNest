@@ -88,7 +88,7 @@ const Home: React.FC = () => {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600">
-              Learnova is a modern online learning platform that helps
+              SkillNest is a modern online learning platform that helps
               students learn from expert faculty, practice their skills and
               track their academic progress.
             </p>
@@ -183,7 +183,7 @@ const Home: React.FC = () => {
       {/* Features */}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="text-center">
-          <p className="font-semibold text-blue-600">WHY LEARNOVA?</p>
+          <p className="font-semibold text-blue-600">WHY SkillNest?</p>
 
           <h2 className="mt-2 text-3xl font-bold text-gray-900">
             Everything you need to learn better
@@ -275,15 +275,15 @@ const Home: React.FC = () => {
           </h2>
 
           <p className="mx-auto mt-3 max-w-xl text-blue-100">
-            Join Learnova and take the next step in your learning journey.
+            Join SkillNest and take the next step in your learning journey.
           </p>
 
-          <Link
-            to="/courses"
-            className="mt-7 inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-700 transition hover:bg-blue-50"
-          >
-            Explore Courses
-          </Link>
+            <Link
+                to="/courses"
+                className="rounded-xl border border-blue-200 bg-white px-6 py-3 font-semibold text-blue-600 shadow-sm transition-all hover:bg-blue-50 hover:border-blue-300"
+                >
+                Explore Courses →
+            </Link>
         </div>
       </section>
     </div>

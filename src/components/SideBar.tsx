@@ -44,7 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           </div>
 
           <span className="text-xl font-bold text-blue-700">
-            Learnova
+            SkillNest
           </span>
         </Link>
       </div>

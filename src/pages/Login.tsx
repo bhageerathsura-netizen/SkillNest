@@ -19,7 +19,7 @@ const Login: React.FC = () => {
       {/* Left */}
       <div className="hidden flex-1 bg-blue-600 p-12 text-white lg:flex lg:flex-col lg:justify-between">
         <Link to="/" className="text-2xl font-bold">
-          Learnova
+          SkillNest
         </Link>
 
         <div className="max-w-lg">
@@ -38,7 +38,7 @@ const Login: React.FC = () => {
         </div>
 
         <p className="text-sm text-blue-200">
-          © 2026 Learnova
+          © 2026 SkillNest
         </p>
       </div>
 
@@ -50,7 +50,7 @@ const Login: React.FC = () => {
               to="/"
               className="text-2xl font-bold text-blue-700"
             >
-              Learnova
+              SkillNest
             </Link>
           </div>
 

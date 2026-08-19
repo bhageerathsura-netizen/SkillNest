@@ -17,70 +17,92 @@ const FacultyCard: React.FC<FacultyCardProps> = ({
   rating = 4.8,
   image,
 }) => {
+  const initials = name
+    .split(" ")
+    .filter((word) => !["Ms.", "Mrs.", "Mr.", "Dr.", "Prof."].includes(word))
+    .map((word) => word[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+
   return (
-    <div className="group rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+    <div className="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl">
       
-      {/* Profile Image */}
-      <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full border-4 border-blue-50 bg-blue-100">
-        {image ? (
-          <img
-            src={image}
-            alt={name}
-            className="h-full w-full object-cover"
-          />
-        ) : (
-          <div className="flex h-full w-full items-center justify-center text-2xl font-bold text-blue-700">
-            {name
-              .split(" ")
-              .map((word) => word[0])
-              .join("")
-              .slice(0, 2)}
-          </div>
-        )}
-      </div>
+      {/* =====================================================
+          PROFILE
+      ====================================================== */}
+      <div className="flex items-center gap-5">
+        {/* Profile Image / Initials */}
+        <div className="h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-blue-50 ring-4 ring-blue-50">
+          {image ? (
+            <img
+              src={image}
+              alt={name}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center text-2xl font-bold text-blue-600">
+              {initials}
+            </div>
+          )}
+        </div>
 
-      {/* Name */}
-      <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-700">
-        {name}
-      </h3>
+        {/* Name + Role */}
+        <div className="min-w-0">
+          <h3 className="text-lg font-bold leading-tight text-slate-900 transition-colors group-hover:text-blue-700">
+            {name}
+          </h3>
 
-      {/* Role */}
-      <p className="mt-1 text-sm font-medium text-blue-600">
-        {role}
-      </p>
-
-      {/* Department */}
-      <p className="mt-2 text-sm text-gray-500">
-        {department}
-      </p>
-
-      {/* Stats */}
-      <div className="mt-5 flex items-center justify-center gap-5 border-t border-gray-100 pt-4">
-        <div>
-          <p className="text-sm font-bold text-gray-900">
-            {experience}
+          <p className="mt-1 text-sm font-semibold text-blue-600">
+            {role}
           </p>
 
-          <p className="text-xs text-gray-400">
+          <p className="mt-1 text-sm text-slate-500">
+            {department}
+          </p>
+        </div>
+      </div>
+
+      {/* =====================================================
+          DIVIDER
+      ====================================================== */}
+      <div className="my-6 h-px bg-slate-100" />
+
+      {/* =====================================================
+          STATS
+      ====================================================== */}
+      <div className="grid grid-cols-2 gap-4">
+        
+        {/* Experience */}
+        <div className="rounded-xl bg-slate-50 p-4">
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
             Experience
           </p>
+
+          <p className="mt-1 text-base font-bold text-slate-900">
+            {experience}
+          </p>
         </div>
 
-        <div className="h-8 w-px bg-gray-200" />
-
-        <div>
-          <p className="text-sm font-bold text-gray-900">
-            ★ {rating}
+        {/* Rating */}
+        <div className="rounded-xl bg-slate-50 p-4">
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+            Rating
           </p>
 
-          <p className="text-xs text-gray-400">
-            Rating
+          <p className="mt-1 text-base font-bold text-slate-900">
+            ★ {rating}
           </p>
         </div>
       </div>
 
-      {/* Button */}
-      <button className="mt-5 w-full rounded-lg border border-blue-600 px-4 py-2.5 text-sm font-semibold text-blue-600 transition-colors hover:bg-blue-600 hover:text-white">
+      {/* =====================================================
+          BUTTON
+      ====================================================== */}
+      <button
+        type="button"
+        className="mt-6 w-full rounded-xl border border-blue-200 bg-white px-4 py-3 text-sm font-semibold text-blue-600 transition-all duration-200 hover:border-blue-600 hover:bg-blue-600 hover:text-white"
+      >
         View Profile
       </button>
     </div>

@@ -29,7 +29,7 @@ const Profile: React.FC = () => {
                 </h2>
 
                 <p className="mt-1 text-gray-500">
-                  Student • Learnova
+                  Student • SkillNest
                 </p>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Profile: React.FC = () => {
                 </label>
 
                 <p className="mt-2 font-medium text-gray-900">
-                  student@learnova.com
+                  student@SkillNest.com
                 </p>
               </div>
 

@@ -25,7 +25,7 @@ export const faculty: Faculty[] = [
     ],
     qualification: "Ph.D. in Computer Science",
     bio: "Dr. Ananya Rao is an experienced computer science educator specializing in modern web technologies and software engineering.",
-    email: "ananya@learnova.com",
+    email: "ananya@SkillNest.com",
   },
 
   {
@@ -41,7 +41,7 @@ export const faculty: Faculty[] = [
     ],
     qualification: "M.Tech in Computer Science",
     bio: "Prof. Rahul Sharma focuses on programming fundamentals and helping students develop strong problem-solving skills.",
-    email: "rahul@learnova.com",
+    email: "rahul@SkillNest.com",
   },
 
   {
@@ -57,7 +57,7 @@ export const faculty: Faculty[] = [
     ],
     qualification: "Ph.D. in Artificial Intelligence",
     bio: "Dr. Priya Nair is an AI researcher and educator passionate about machine learning and emerging technologies.",
-    email: "priya@learnova.com",
+    email: "priya@SkillNest.com",
   },
 
   {
@@ -73,7 +73,7 @@ export const faculty: Faculty[] = [
     ],
     qualification: "M.Des in Interaction Design",
     bio: "Prof. Arjun Mehta teaches user-centered design and helps students create intuitive and engaging digital experiences.",
-    email: "arjun@learnova.com",
+    email: "arjun@SkillNest.com",
   },
 
   {
@@ -89,7 +89,7 @@ export const faculty: Faculty[] = [
     ],
     qualification: "Ph.D. in Data Science",
     bio: "Dr. Sneha Kapoor combines academic research with industry experience to teach practical data science skills.",
-    email: "sneha@learnova.com",
+    email: "sneha@SkillNest.com",
   },
 
   {
@@ -105,7 +105,7 @@ export const faculty: Faculty[] = [
     ],
     qualification: "M.Tech in Cloud Computing",
     bio: "Prof. Vikram Singh specializes in cloud infrastructure, application deployment and modern cloud technologies.",
-    email: "vikram@learnova.com",
+    email: "vikram@SkillNest.com",
   },
 ];
 

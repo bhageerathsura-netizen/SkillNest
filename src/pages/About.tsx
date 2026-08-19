@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <section className="bg-blue-600 px-6 py-20 text-white">
         <div className="mx-auto max-w-4xl text-center">
           <p className="font-semibold text-blue-200">
-            ABOUT LEARNOVA
+            ABOUT SkillNest
           </p>
 
           <h1 className="mt-3 text-4xl font-bold md:text-5xl">
@@ -18,7 +18,7 @@ const About: React.FC = () => {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-blue-100">
-            Learnova is designed to bring courses, faculty, lectures,
+            SkillNest is designed to bring courses, faculty, lectures,
             assignments and academic progress together in one simple
             learning experience.
           </p>
